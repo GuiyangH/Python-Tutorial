@@ -26,7 +26,7 @@ while abs(test_joint - prob_joint) > error:
     test_joint = erfc(sigma_joint/sqrt(2.0))
     sigma_joint += 0.001
 
-print 'Joint Significance is', sigma_joint
+print 'Joint Significance is', sigma_joint ## we dont need to multiply extra sqrt(2) here.
 
 #(method 2: directly use inverse function)
 from scipy.special import erfcinv
