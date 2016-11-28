@@ -7,12 +7,12 @@
 
 ##1. Open/Read/Create a file
 
-#f = open('workf','r') #'r'--'read', this will give an error because there is no such file
+#f = open('workf.txt','r') #'r'--'read', this will give an error because there is no such file
 
-f = open('workf','w') #'w'--'write', you cannot read the file, but write it(create on if not exist)
+f = open('workf.txt','w') #'w'--'write', you cannot read the file, but write it(create on if not exist)
           #Caution that everytime this runs, it overwrite previous file(Erase everything)
 
-#f = open('workf','r+') #'r+' is for read and write together, so more compatable
+#f = open('workf.txt','r+') #'r+' is for read and write together, so more compatable
                     # but it gives trouble sometimes.
 # f.close() #be sure to close it.(or the file will be not notepad-table)
 
